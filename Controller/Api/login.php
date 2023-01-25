@@ -120,9 +120,9 @@ function postMethod($objLogin){
                         $tokenMail = $token;
                     }
                     $to      = $mail;
-                    $subject = 'PillTake - Cambio de contraseña';
-                    $message = 'Se solicitó un cambió de contraseña para tu cuenta '.$mail.'. Si fuiste tu el que solicitó el cambio haz click en el siguiente enlace: https://pruebasrojr.000webhostapp.com/pilltake/reset.php?type=2&token='.$tokenMail.' Si no fuiste tu ignora el mensaje y no hagas nada.';
-                    $headers = 'From: no-reply@pilltake.com';
+                    $subject = 'Mail Subject';
+                    $message = 'Mail Message';
+                    $headers = 'From: mail;
                     mail($to, $subject, $message, $headers);
                     http_response_code(200);
                 }
